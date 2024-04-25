@@ -1,10 +1,9 @@
 'use client';
-
+import '../../styles/global.css';
 import React from 'react';
 import Image from 'next/image';
 
 // import platformList from './platforms';
-import Platform from './Platform';
 
 // import styles from './style.module.css';
 import './style.css';
@@ -16,14 +15,13 @@ const page = () => {
     <div className='flexParent'>
       <div className='flexContainer'>
         <div>
-          <Image src={linkedinPic} alt='  profile picture' className='image' />
+          <Image src={linkedinPic} alt='profile picture' className='image' />
         </div>
         <div className='intro'>
-          <div className='name mainHeading'>Vishak</div>
-          <div className='subHeading greenText'></div>
-          Santa Clara, USA
+          <div className='name'>Vishak</div>
+          <div className='greenText'>Santa Clara, USA</div>
         </div>
-        <div className='intro'>"Software Engineer"</div>
+        <div className='name'>Software Engineer</div>
 
         <a href='https://github.com/Vishakhavel' target='_blank'>
           <div className='flexItem'>github</div>
